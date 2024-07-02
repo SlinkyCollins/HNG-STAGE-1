@@ -12,9 +12,16 @@ body {
   border-radius: 10px;
 }
 
+#profile-details a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin: 1rem 0;
+}
+
 img {
-  width: 60%; 
-  height: auto; 
+  width: 60%;
+  height: auto;
   max-width: 720px;
   border-radius: 50%;
   object-fit: cover;
@@ -29,36 +36,35 @@ img {
 }
 
 #goals > li {
-    margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 #links {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2rem;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  gap: 1rem;
 }
 
 #links > a {
-    text-decoration: none;
-    
+  text-decoration: none;
 }
 
-
-
-@media (min-width: 720px) {
+@media (min-width: 700px) and (max-width: 1500px) {
+  body {
+    margin: 10rem auto;
+  }
   img {
-    width: 50%; 
+    width: 40%;
     max-width: 720px;
-    height: auto; 
+    height: auto;
+    max-height: 720px;
     object-fit: cover;
   }
 
   #profile {
     display: flex;
-    padding: 4rem;
     gap: 4rem;
-    margin: 10rem;
   }
 
   #profile-details {
@@ -68,24 +74,7 @@ img {
     font-size: 1.5rem;
   }
 
-  #time {
-    padding: 0.5rem 10rem;
-  }
-  
-  #goals {
-    padding: 0 10rem 0 10rem;
-  }
-  
-  #goals > li {
-      margin: .5rem 0;
-  }
-  
-  #links {
-      margin: 0 10rem;
-  }
-  
   #links > a {
-      text-decoration: none;
-      
+    text-decoration: none;
   }
 }
