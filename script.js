@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateTime();
     updateDay();
-    setInterval(updateTime, 1000); // Update time every second
+    setInterval(updateTime, 1000); // Updates the time every second
 });
